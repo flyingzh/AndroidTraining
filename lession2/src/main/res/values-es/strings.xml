@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lession2</string>
+
+    <string name="title">Mi Application</string>
+    <string name="hello_world">Hola Mundo!</string>
+
+</resources>
