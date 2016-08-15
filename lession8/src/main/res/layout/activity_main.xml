@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.yuanyang.lession8.MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/contailer_list_article"
+        android:name="com.yuanyang.lession8.ArticleListFrgment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#BBBBBB" />
+
+    <FrameLayout
+        android:id="@+id/contailer_detail_article"
+        android:name="com.yuanyang.lession8.ArticleListFrgment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2" />
+
+
+</LinearLayout>
