@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="话虽白，却锥心。这句台词映射到人们心里的，是对一个“为官者”最为朴素的责任与良心的拷问。但对新时期的执政党来说，要允公允能，要廉洁高效，仅有朴素的拷问是不够的，更需要信仰的引领和制度的约束"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+
+</LinearLayout>
