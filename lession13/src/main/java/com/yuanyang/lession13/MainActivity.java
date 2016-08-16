@@ -21,7 +21,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        pickContact();
+        //pickContact();
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setType("text/plain");
+        intent.putExtra(Intent.EXTRA_TEXT, getResources().getString(R.string.app_name));
+        startActivity(intent);
     }
 
     private void pickContact() {
