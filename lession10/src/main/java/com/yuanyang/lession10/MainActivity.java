@@ -51,5 +51,7 @@ public class MainActivity extends AppCompatActivity {
         tv_data.append(Environment.getRootDirectory().toString() + "\n");
         tv_data.append((Environment.isExternalStorageEmulated() ? "enum" : "not enum") + "\n");
         tv_data.append((Environment.isExternalStorageRemovable() ? "removeable" : "not removeable") + "\n");
+        tv_data.append(Environment.getDownloadCacheDirectory().toString() + "\n");
+        tv_data.append(Environment.getExternalStorageDirectory().toString() + "\n");
     }
 }
