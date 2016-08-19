@@ -27,7 +27,6 @@ public class UnitTestDemo {
 
         //当调用context.getString方法以后，就返回参数
         when(mMockContext.getString(R.string.app_name)).thenReturn(FAKE_STRING);
-
         ClassUnderTest test = new ClassUnderTest(mMockContext);
         String helloWorldString = test.getHelloWorldString();
         assertThat(helloWorldString, is(FAKE_STRING));
