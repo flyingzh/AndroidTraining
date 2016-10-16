@@ -18,3 +18,12 @@
 
             - showAsAction=“ifRoom”，意思是如果有多余空间，就展示成按钮形式，否则使用下拉菜单展示
             - showAsAction=“never”,这个menu一直作为下来菜单展示。
+
+- 给Activity添加返回操作:
+
+
+
+            - 可以在ActionBar上通过 setDisplayHomeAsUpEnabled(true)来显示返回按钮。
+            - 点击返回按钮，可以通过在Manifest.xml中指定返回的Activity。
+                        - 如果是在4.1（API 16）以上系统：android:parentActivityName:来指定返回Activity的名称
+                        - 如果是在4.0以下系统,还需要通过meta-data来做兼容。
