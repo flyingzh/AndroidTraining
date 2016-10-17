@@ -28,7 +28,7 @@
                         - 如果是在4.1（API 16）以上系统：android:parentActivityName:来指定返回Activity的名称
                         - 如果是在4.0以下系统,还需要通过meta-data来做兼容。
                         
-####  Snackbar
+####  第三十课 Snackbar
 
 	
 - SnackBar附着在一个View上面，附着在View上的SnackBar会提供基础的功能,如果SnackBar附着在CoordinatorLayout上面将会有如下特性：
