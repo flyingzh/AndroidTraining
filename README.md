@@ -27,3 +27,16 @@
             - 点击返回按钮，可以通过在Manifest.xml中指定返回的Activity。
                         - 如果是在4.1（API 16）以上系统：android:parentActivityName:来指定返回Activity的名称
                         - 如果是在4.0以下系统,还需要通过meta-data来做兼容。
+                        
+####  Snackbar
+
+	
+- SnackBar附着在一个View上面，附着在View上的SnackBar会提供基础的功能,如果SnackBar附着在CoordinatorLayout上面将会有如下特性：
+            - 用户可以通过滑动将其删除
+            - 当SnackBar出现的时候，布局会移动一些UI。比如：如果布局中含有FloatingActionButton，那么当Snackbar出现的时候，FloatingActionButton将会上移。
+- CoordinatorLayout继承自FrameLayout。如果你想在FrameLayout中使用FloatingActionButton,那么可以直接将FrameLayout替换成CoordinatorLayout。如果是其他布局，那么最好的解决办法就是在SnackBar外面加上CoordinatorLayout。
+
+展示SnackBar:
+
+- 创建SnackBar对象
+- 向用户展示信息
