@@ -39,4 +39,30 @@
 展示SnackBar:
 
 - 创建SnackBar对象
-- 向用户展示信息
+- 向用户展示- 信息
+
+
+####  自定义控件
+
+一个良好设计的自定义控件拥有良好的界面，有节制的使用CPU和内存资源。为了成为一个良好设计的自定义控件，应该：
+
+- 符合Android规范
+- 提供自定义的样式属性(Styleable attributes)
+- 无障碍的发送事件
+- 兼容多种Android平台
+
+继承一个View
+
+- 所有的控件都继承自View，你的自定义控件可以直接继承View,也可以直接继承现有控件，比如Button
+- 为了让Android Studio与你的自定义View交互，你至少应该提供一个 以 Context和Attributes为参数的构造方法。
+
+为了能在Xml中改变View的属性和外观，我们应该：
+
+- 在<declare-styleable>资源元素中定义属性
+- 在xml布局中指定属性的值
+- 在运行时获取这些值
+- 应用这些值到你的View
+
+当一个View从xml中创建以后，这个View的所有属性都会从资源文件中读出来，并且作为AttributSet传入View的构造函数中。
+
+当改变View的属性以后，应该调用validate和requestLayout让界面重新绘制。
